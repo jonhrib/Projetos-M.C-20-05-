@@ -95,5 +95,5 @@ Se o valor recebido for 1, ligamos o led e exibimos uma mensagem no Terminal, j�
 
 O que faz o led mudar de estado, principalmente, é o sinal enviado através do aplicativo, por exemplo, ao digitar 1 no app, o led será acesso, se 0 for digitado, o led será apagado.
 
-# Os presentes projetos foram desenvolvidos pelos discentes João Vitor de Souza Ribeiro e Vinicius Ferreira Couto, do 3º Ano do curso de Cência da Computação, da Universidade Estadual do Paraná (Unespar).
+<t1> Os presentes projetos foram desenvolvidos pelos discentes João Vitor de Souza Ribeiro e Vinicius Ferreira Couto, do 3º Ano do curso de Cência da Computação, da Universidade Estadual do Paraná (Unespar).
 
