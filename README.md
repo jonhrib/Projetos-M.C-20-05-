@@ -22,7 +22,7 @@ Ao início da aula do dia 20-05, nos foi proposto a execução e análise de qua
       Serial.println(pin7);
     }
 
-Ao aplicar o código, vemos, no Serial Monitor, uma constante exibição de números zeros, isso ocorre pois o pin7 recebe 0 ao início do código, e, sem conexões de jumpers, esse valor não é alteradp.
++ Ao aplicar o código, vemos, no Serial Monitor, uma constante exibição de números zeros, isso ocorre pois o pin7 recebe 0 ao início do código, e, sem conexões de jumpers, esse valor não é alteradp.
 
 # Projeto 2: Aplicação do Projeto 1
 
@@ -36,7 +36,7 @@ O mesmo código do Projeto 1 foi utilizado, no entanto, temos duas aplicações,
 
     Basicamente podemos ver, nestes casos, que o pin7 reproduz o sinal que ele recebe pela porta 7 em byte, ou seja, se a porta 7 tiver um sinal 1, o pin7 terá sinal 1, e vice-versa.
     
-Na mesma aplicação, pudemos ver que a porta 13 têm um sinal que fica sendo constantemente alternada dentro do loop principal, portanto, o sinal exibido por ela será sempre 0,1,0,1...
++ Na mesma aplicação, pudemos ver que a porta 13 têm um sinal que fica sendo constantemente alternada dentro do loop principal, portanto, o sinal exibido por ela será sempre 0,1,0,1...
 
 # Projeto 3: Touch no ESP32 
 
@@ -89,11 +89,11 @@ Neste projeto temos primeiramente o seguinte código que deve ser inserido na ID
       delay(20); // Pequeno atraso para evitar leitura excessiva
     }
 
-No código mostrado a cima, a biblioteca <BluetoothSerial.h> permite que o ESP realize interações com um dispositivo celular por meio do aplicativo Serial Bluetooth Terminal (da Kai Morich), por meio dela podemos receber o valor c, como 0 ou 1. Utilizamos um led, ligado à porta 2, permitindo que visualizemos qual o sinal está sendo recebido por meio do bluetooth.
++ No código mostrado a cima, a biblioteca <BluetoothSerial.h> permite que o ESP realize interações com um dispositivo celular por meio do aplicativo Serial Bluetooth Terminal (da Kai Morich), por meio dela podemos receber o valor c, como 0 ou 1. Utilizamos um led, ligado à porta 2, permitindo que visualizemos qual o sinal está sendo recebido por meio do bluetooth.
 
-Se o valor recebido for 1, ligamos o led e exibimos uma mensagem no Terminal, já se o valor for 0, desligamos o led e exibimos essa mensagem no Terminal.
++ Se o valor recebido for 1, ligamos o led e exibimos uma mensagem no Terminal, já se o valor for 0, desligamos o led e exibimos essa mensagem no Terminal.
 
-O que faz o led mudar de estado, principalmente, é o sinal enviado através do aplicativo, por exemplo, ao digitar 1 no app, o led será acesso, se 0 for digitado, o led será apagado.
++ O que faz o led mudar de estado, principalmente, é o sinal enviado através do aplicativo, por exemplo, ao digitar 1 no app, o led será acesso, se 0 for digitado, o led será apagado.
 
 *** Os presentes projetos foram desenvolvidos pelos discentes João Vitor de Souza Ribeiro e Vinicius Ferreira Couto, do 3º Ano do curso de Cência da Computação, da Universidade Estadual do Paraná (Unespar). ***
 
