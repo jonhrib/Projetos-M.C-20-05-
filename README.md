@@ -88,5 +88,7 @@ No código mostrado a cima, a biblioteca <BluetoothSerial.h> permite que o ESP r
 
 Se o valor recebido for 1, ligamos o led e exibimos uma mensagem no Terminal, já se o valor for 0, desligamos o led e exibimos essa mensagem no Terminal.
 
+O que faz o led mudar de estado, principalmente, é o sinal enviado através do aplicativo, por exemplo, ao digitar 1 no app, o led será acesso, se 0 for digitado, o led será apagado.
+
 
 
