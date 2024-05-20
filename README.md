@@ -40,22 +40,27 @@ Na mesma aplicação, pudemos ver que a porta 13 têm um sinal que fica sendo co
 
 # Projeto 3: Touch no ESP32 
 
-    int LED_BUILTIN = 23; // Define o pino do LED
+Neste projeto temos primeiramente o seguinte código que deve ser inserido na IDE Arduino:
+
+    int LED_BUILTIN = 23;//Instancia a porta 23 como da variável LED_BuILTIN
     
     void setup() {
-      pinMode(LED_BUILTIN, OUTPUT); // Configura o pino do LED como saída
-      pinMode(T0, INPUT);
-      // Não é necessário configurar T0 (GPIO4) como entrada
+      pinMode(LED_BUILTIN, OUTPUT);//Define a variável LED_BuILTIN(porta 23) como uma saída de dados
+      pinMode(T0, INPUT);//Define a porta T0(que no ESP32 é a D4) como uma entrada de dados
     }
     
     void loop() {
-      if (touchRead(T0) < 20) { // Lê o valor do pino touch T0 (GPIO4)
-        digitalWrite(LED_BUILTIN, HIGH); // Liga o LED se o valor lido for menor que 20
-      } else {
-        digitalWrite(LED_BUILTIN, LOW); // Desliga o LED caso contrário
+      if(touchRead(T0) < 20){//Caso a porta T0 leia algum toque, o LED irá acender. Caso contrário, o LED fica apagado
+        digitalWrite(LED_BUILTIN, HIGH);//LED acende
+      }else{
+        digitalWrite(LED_BUILTIN, LOW);LED apaga
       }
-      delay(100); // Aguarda 100 milissegundos antes de repetir o loop
+      delay(100);//Delay de 100 milissegundos
     }
+
++ O presente circuito tem como principal função acender um LED caso uma porta esteja recebendo toques(touches), através da utilização de uma função chamada touchRead que verifica se a porta T0 está recebendo entradas de toque. Portanto, se a porta T0 estiver recebendo a entradas de toque, o LED acende. Caso contrário o LED não acende.
+
++ São usadas as portas 23 como saída de dados(LED), a porta T0(D4) como entra de dados e a porta GND como terra.
 
 
 # Projeto 4: BlueThoth no ESP32
@@ -90,5 +95,5 @@ Se o valor recebido for 1, ligamos o led e exibimos uma mensagem no Terminal, j�
 
 O que faz o led mudar de estado, principalmente, é o sinal enviado através do aplicativo, por exemplo, ao digitar 1 no app, o led será acesso, se 0 for digitado, o led será apagado.
 
-
+# Os presentes projetos foram desenvolvidos pelos discentes João Vitor de Souza Ribeiro e Vinicius Ferreira Couto, do 3º Ano do curso de Cência da Computação, da Universidade Estadual do Paraná (Unespar).
 
